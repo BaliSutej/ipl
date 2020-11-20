@@ -36,7 +36,7 @@ class OwnerFilter extends Component{
   render(){
 
     let dispComp ="";
-    if(this.state.opt == "Team"){
+    if(this.state.opt === "Team"){
       dispComp = <OwnerForm applyHandler={this.applyHandler}/>
     }
 

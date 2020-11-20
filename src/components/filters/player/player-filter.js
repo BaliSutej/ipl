@@ -94,13 +94,13 @@ class PlayerFilter extends Component{
         height : "80vh"
       }
 
-      if(this.state.opt == "DOB"){
+      if(this.state.opt === "DOB"){
         dispOut = <DOBForm dateChangeHandler={this.dateChangeHandler} dob={this.state.dob} />
-      }else if(this.state.opt == "Batting"){
+      }else if(this.state.opt === "Batting"){
         dispOut = <BattingForm battingChangeHandler={this.battingChangeHandler} batting={this.state.batting} />
-      }else if(this.state.opt == "Bowling"){
+      }else if(this.state.opt === "Bowling"){
         dispOut = <BowlingForm bowlingChangeHandler={this.bowlingChangeHandler} bowling={this.state.bowling} />
-      }else if(this.state.opt == "Country"){
+      }else if(this.state.opt === "Country"){
         dispOut = <CountryForm countryChangeHandler={this.countryChangeHandler} country={this.state.country} />
       }
 

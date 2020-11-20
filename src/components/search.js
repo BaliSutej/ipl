@@ -20,7 +20,7 @@ class Search extends Component{
 
       return(
         <div style={{}} className="search">
-          <input style={ barStyle } type="text" placeHolder="Search"></input>
+          <input style={ barStyle } type="text" placeholder="Search"></input>
         </div>
       )
     }

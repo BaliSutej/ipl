@@ -18,8 +18,8 @@ class App extends Component{
     this.state = {
       category : "No Filters" 
     };
-    
-    console.log("constructer ->"+ this.state.category);
+     
+   
     this.handleChange = this.handleChange.bind(this);
 
   }
@@ -35,13 +35,13 @@ class App extends Component{
   render(){
 
     let filter = <DummyFilter/>;
-    if(this.state.category == "Team"){
+    if(this.state.category === "Team"){
       filter = <TeamFilter/>;
-    }else if(this.state.category == "Venue"){
+    }else if(this.state.category === "Venue"){
       filter = <VenueFilter/>;
-    }else if(this.state.category == "Player"){
+    }else if(this.state.category === "Player"){
       filter = <PlayerFilter/>;
-    }else if(this.state.category == "Owner"){
+    }else if(this.state.category === "Owner"){
       filter = <OwnerFilter/>;
     }else{
       filter = <DummyFilter/>;

@@ -39,7 +39,7 @@ class VenueFilter extends Component{
     render(){
 
       let dispComp ="";
-      if(this.state.opt == "Team"){
+      if(this.state.opt === "Team"){
         dispComp = <VenueForm applyHandler={this.applyHandler}/>
       }
 

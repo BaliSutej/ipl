@@ -1,6 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
-import DummyForm from './venue/dummy-form';
+
 
 class DummyFilter extends Component{
 

@@ -64,9 +64,9 @@ class TeamFilter extends Component{
 
       let dispout;
 
-      if(this.state.opt == "Win Ratio"){
+      if(this.state.opt === "Win Ratio"){
         dispout = <WinLossForm applyWinLossHandler={this.applyWinLossHandler} />
-      }else if(this.state.opt == "Home Away Matches"){
+      }else if(this.state.opt === "Home Away Matches"){
         dispout = <HomeAwayForm applyHomeAwayHandler={this.applyHomeAwayHandler} />
       }
 
